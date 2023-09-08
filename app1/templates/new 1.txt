@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+
+
+
+<div class="col-md-10 offset-1 p-3">
+<form action="/insertform/" method="post" enctype="multipart/form-data">
+{% csrf_token %}
+
+<div class="form-group">
+<label for="pic">upload pic</label>
+<input type="file" class="form control" name="pic" placeholder="" />
+</div>

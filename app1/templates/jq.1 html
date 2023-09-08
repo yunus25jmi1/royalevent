@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+<div class="p-3">
+<button id="b1">click</button>
+<div id="d1" style="height:100px; width:100px;
+background:blue;">
+</div>
+</div>
+<script src="{% static 'jquery.js' %}"></script>
+<script>
+$(document).ready(function(){
+
+$("#b1").click(function(){
+//alert('clicked');
+$("#d1").toggle(1000);
+});
+
+});
+</script>
+
+{% endblock}

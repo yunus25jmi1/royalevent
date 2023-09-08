@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Language" content="en">
+
+    
+    
+
+    <title>
+        banner-slider.slider - Jssor Slider
+    </title>
+    <!-- #region Google Ad Code -->
+    <script src="jquery_files/osd.js"></script><script src="jquery_files/cookie.js"></script><script src="jquery_files/show_ads_impl_fy2019.js" id="google_shimpl"></script><script type="text/javascript" async="" src="jquery_files/analytics.js"></script><script async="" src="jquery_files/adsbygoogle.js"></script>
+    <!-- #endregion -->
+    
+    <style type="text/css">
+        .elfinder-tree .elfinder-navbar-root .elfinder-navbar-icon {
+            background-position: 0 -16px !important;
+        }
+    </style>
+
+    <!-- Google Counter Begin -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="jquery_files/js"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-45690170-1');
+    </script>
+    <!-- Google Counter End -->
+
+
+    <link href="jquery_files/site-style-2.css" rel="stylesheet">
+<meta http-equiv="origin-trial" content="A88otRz1Fd3Nt567e2IYshC18LL3KGVXpVJW9oTCId4RYaygt23pbb4JqrbdIO/bwZPWEmRjBIRBu/bZbDR7Pg4AAABueyJvcmlnaW4iOiJodHRwczovL2ltYXNkay5nb29nbGVhcGlzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MzQwODMxOTksImlzVGhpcmRQYXJ0eSI6dHJ1ZX0="><meta http-equiv="origin-trial" content="A0gCLbXCcL0R1Oc8tFPDs0G4Elz17w3zHp+Zst66+D17veE2o7fUcPsA114QtSTRqfVJLMeTSdeWOom0CcyCsgYAAAB7eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MzQwODMxOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A9RQ+LxFazAousxUwSCzaihJjHLO1UyjQp0teZKHl7WdbVjPDfHSKMd6D/ZI5MTjqClFycbl70EFd7cBJWXqKQEAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MzQwODMxOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A6WKeWsdn1Ct+ZPqS9NCxxaiBoQ7wdTkK2/gE69Yu0gfBKJfo1gOvgkGmf5/xaIajT/RUb9AbnF1FsSZ47cCcQcAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MzQwODMxOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A04ZCu7yjrHgwQJK5ISHhH1DSg0qqowEay3n70KO6wV3D2Mj+OX3Kw20aSMitzgdG1xfrN7sOJV/dZIk+RvCzA4AAAB2eyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IlRydXN0VG9rZW5zIiwiZXhwaXJ5IjoxNjM0MDgzMTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A2YAd4xOntTGygIDjApOTtXOgVI3IWsd5OnOGq3RbRkIQwyqYWNl1JGRAcvtm6VOHDj4n07T/J19VqLuJn3MmQ8AAACWeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjMxNjYzOTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9"><meta http-equiv="origin-trial" content="A2c5Ux+hivdkLh/KbZUGr6f7SCR0mZrBVfPJ+/OuDVHNwiYv+Lo83b9z5qL8sod78bQl0pSLtbvRWURo+xRl7AIAAACceyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjMxNjYzOTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9"><meta http-equiv="origin-trial" content="AzNJ4sd3tVurolpdvWYZ4cmP9Po7RJhEHSqmC3pgxW9fFVZvchhtcMUgHAs97npxMD1jhXHO8s6q6Wy1MMLxKgEAAACceyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjMxNjYzOTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9"><meta http-equiv="origin-trial" content="AwfG8hAcHnPa/kJ1Co0EvG/K0F9l1s2JZGiDLt2mhC3QI5Fh4qmsmSwrWObZFbRC9ieDaSLU6lHRxhGUF/i9sgoAAACBeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiSW50ZXJlc3RDb2hvcnRBUEkiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AwQ7dCmHkvR6FuOFxAuNnktYSQrGbL4dF+eBkrwNLALc69Wr//PnO1yzns3pjUoCaYbKHtVcnng2hU+8OUm0PAYAAACHeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiSW50ZXJlc3RDb2hvcnRBUEkiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AysVDPGQTLD/Scn78x4mLwB1tMfje5jwUpAAzGRpWsr1NzoN7MTFhT3ClmImi2svDZA7V6nWGIV8YTPsSRTe0wYAAACHeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiSW50ZXJlc3RDb2hvcnRBUEkiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><link rel="preload" href="jquery_files/integrator_002.js" as="script"><script type="text/javascript" src="jquery_files/integrator_002.js"></script><link rel="preload" href="jquery_files/integrator.js" as="script"><script type="text/javascript" src="jquery_files/integrator.js"></script></head>
+<body style="font-family: Arial, sans-serif;">
+    <form method="post" action="./banner-slider.slider" id="form1" class="mainform">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="45i6D1LjxRi3CVUdm2H58JN1gaaa6JcnoCfdMWbyjW+lJXQ6URN31jQJo4wXt50cc9Ql/mJRUBRGMokC4fk7RlvIgZeObJmz4hO/mjazu2NmS7WGqb9vgYNSS89gE3lRuoHjcLqEKxCa1AcgsHG7BpLTDCmZ/zKqzdiY9MS/c6zPdkEGX3kL6GFZXu20Ifa9zXh8961Qn0RBgeQtP4/Aiw==">
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="B6CBD475">
+</div>
+
+        <!--#region header-->
+        <div class="header public clearfix">
+            <a class="logo" href="https://www.jssor.com/">Jssor</a>
+            
+            <div class="nav">
+                <input type="checkbox" id="toggle">
+                <label for="toggle" class="toggle" onclick="">
+                    <span class="icon-bar" style="top: 7px;"></span>
+                    <span class="icon-bar" style="top: 14px;"></span>
+                    <span class="icon-bar" style="top: 21px;"></span>
+                </label>
+                
+                <div data-u="navi-sign" data-interaction="user-commands" class="nav-sign" style="visibility: visible;"><a class="nav-btn nav-signup" href="https://www.jssor.com/action/sign_up.aspx" target="_blank">Sign up</a><a data-command="jssor-login" class="nav-btn nav-signin" href="https://www.jssor.com/action/login.aspx">Log in</a></div>
+                
+        <!-- for public access -->
+        <div class="menu">
+
+            <a href="https://www.jssor.com/">Home</a>
+            <a class="current" href="https://www.jssor.com/demos/">Demos</a>
+            <!--<a href="/slideshow/">Slideshow</a>-->
+            <!--<a href="/skins/">Skins</a>-->
+
+            <a href="https://www.jssor.com/tutorial/">Tutorial</a>
+            <a href="https://www.jssor.com/help/">Help</a>
+
+            <a href="https://www.jssor.com/development/">Development</a>
+            
+            <!--<a href="/download.html">Download</a>-->
+            <a href="https://www.jssor.com/pricing.html">Pricing</a>
+            <a href="https://www.jssor.com/support.html">Support</a>
+        </div>
+
+            </div>
+        </div>
+        <!--#endregion-->
+
+        <!--#region content-->
+        
+
+        
+        <!-- #region Jssor Slider Begin -->
+        <!-- Generator: Jssor Slider Composer -->
+        <!-- Source: https://www.jssor.com/demos/banner-slider.slider/=edit -->
+        <script src="jquery_files/jssor_002.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            window.jssor_1_slider_init = function() {
+
+                var jssor_1_SlideshowTransitions = [
+                  {$Duration:800,x:-0.3,$During:{$Left:[0.3,0.7]},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+                  {$Duration:800,x:0.3,$SlideOut:true,$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2}
+                ];
+
+                var jssor_1_options = {
+                  $AutoPlay: 1,
+                  $SlideshowOptions: {
+                    $Class: $JssorSlideshowRunner$,
+                    $Transitions: jssor_1_SlideshowTransitions,
+                    $TransitionsOrder: 1
+                  },
+                  $ArrowNavigatorOptions: {
+                    $Class: $JssorArrowNavigator$
+                  },
+                  $ThumbnailNavigatorOptions: {
+                    $Class: $JssorThumbnailNavigator$,
+                    $Orientation: 2,
+                    $NoDrag: true
+                  }
+                };
+
+                var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+                /*#region responsive code begin*/
+
+                var MAX_WIDTH = 980;
+
+                function ScaleSlider() {
+                    var containerElement = jssor_1_slider.$Elmt.parentNode;
+                    var containerWidth = containerElement.clientWidth;
+
+                    if (containerWidth) {
+
+                        var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                        jssor_1_slider.$ScaleWidth(expectedWidth);
+                    }
+                    else {
+                        window.setTimeout(ScaleSlider, 30);
+                    }
+                }
+
+                ScaleSlider();
+
+                $Jssor$.$AddEvent(window, "load", ScaleSlider);
+                $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+                $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+                /*#endregion responsive code end*/
+            };
+        </script>
+        <style>
+            /*jssor slider loading skin spin css*/
+            .jssorl-009-spin img {
+                animation-name: jssorl-009-spin;
+                animation-duration: 1.6s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+
+            @keyframes jssorl-009-spin {
+                from { transform: rotate(0deg); }
+                to { transform: rotate(360deg); }
+            }
+
+            .jssora061 {display:block;position:absolute;cursor:pointer;}
+            .jssora061 .a {fill:none;stroke:#fff;stroke-width:360;stroke-linecap:round;}
+            .jssora061:hover {opacity:.8;}
+            .jssora061.jssora061dn {opacity:.5;}
+            .jssora061.jssora061ds {opacity:.3;pointer-events:none;}
+        </style>
+        <div id="jssor_1" style="position: relative; margin: 0px auto; top: 0px; left: 0px; width: 980px; height: 380px; overflow: hidden; visibility: visible;" data-jssor-slider="1">
+            <!-- Loading Screen -->
+            
+            <div style="display: block; position: absolute; top: 0px; left: 0px; width: 980px; height: 380px;"><div style="display: block; position: absolute; top: 0px; left: 0px; width: 980px; height: 380px;"><div data-u="slides" style="cursor: default; position: absolute; top: 0px; left: 0px; width: 980px; height: 380px; overflow: hidden; margin: 0px; padding: 0px; transform-style: flat; z-index: 0; pointer-events: none;"><div style="width: 980px; height: 380px; top: 0px; left: 0px; position: absolute; z-index: 0; display: none;"></div></div><div data-u="slides" style="cursor: default; position: absolute; top: 0px; left: 0px; width: 980px; height: 380px; overflow: hidden; margin: 0px; padding: 0px; transform-style: flat; z-index: 0;">
+                <div style="width: 980px; height: 380px; top: 0px; left: -980px; position: absolute; z-index: 1; overflow: hidden; transform-style: flat;">
+                    <div style="width: 980px; height: 380px; top: 0px; left: 0px; display: block; position: absolute; overflow: hidden; background-color: rgba(0, 0, 0, 0); background-image: none;" data-u="bg"><img data-u="image" src="jquery_files/045.jpg" style="width: 980px; height: 380px; top: 0px; left: 0px; display: block; position: absolute; max-width: 10000px; z-index: 1;" data-events="auto" data-display="block" border="0"></div>
+                    <div u="thumb" data-events="auto" data-display="block" style="z-index: 1; display: none;">Slide Description 001
+                    </div>
+                </div>
+                <div style="width: 980px; height: 380px; top: 0px; left: -980px; position: absolute; z-index: 1; overflow: hidden; transform-style: flat;">
+                    <div style="width: 980px; height: 380px; top: 0px; left: 0px; display: block; position: absolute; overflow: hidden; background-color: rgba(0, 0, 0, 0); background-image: none;" data-u="bg"><img data-u="image" src="jquery_files/043.jpg" style="width: 980px; height: 380px; top: 0px; left: 0px; display: block; position: absolute; max-width: 10000px; z-index: 1;" data-events="auto" data-display="block" border="0"></div>
+                    <div u="thumb" data-events="auto" data-display="block" style="z-index: 1; display: none;">Slide Description 002
+                    </div>
+                </div>
+                <div style="width: 980px; height: 380px; top: 0px; left: 0px; position: absolute; z-index: 1; overflow: hidden; transform-style: flat;">
+                    <div style="width: 980px; height: 380px; top: 0px; left: 0px; display: block; position: absolute; overflow: hidden; background-color: rgba(0, 0, 0, 0); background-image: none;" data-u="bg"><img data-u="image" src="jquery_files/046.jpg" style="width: 980px; height: 380px; top: 0px; left: 0px; display: block; position: absolute; max-width: 10000px; z-index: 1;" data-events="auto" data-display="block" border="0"></div>
+                    <div u="thumb" data-events="auto" data-display="block" style="z-index: 1; display: none;">Slide Description 003
+                    </div>
+                </div>
+                <div style="width: 980px; height: 380px; top: 0px; left: 980px; position: absolute; z-index: 1; overflow: hidden; transform-style: flat;">
+                    <div style="width: 980px; height: 380px; top: 0px; left: 0px; display: block; position: absolute; overflow: hidden; background-color: rgba(0, 0, 0, 0); background-image: none;" data-u="bg"><img data-u="image" src="jquery_files/047.jpg" style="width: 980px; height: 380px; top: 0px; left: 0px; display: block; position: absolute; max-width: 10000px; z-index: 1;" data-events="auto" data-display="block" border="0"></div>
+                    <div u="thumb" data-events="auto" data-display="block" style="z-index: 1; display: none;">Slide Description 004
+                    </div>
+                </div>
+                <div style="width: 980px; height: 380px; top: 0px; left: -980px; position: absolute; z-index: 1; overflow: hidden; transform-style: flat;">
+                    <div style="width: 980px; height: 380px; top: 0px; left: 0px; display: block; position: absolute; overflow: hidden; background-color: rgba(0, 0, 0, 0); background-image: none;" data-u="bg"><img data-u="image" src="jquery_files/048.jpg" style="width: 980px; height: 380px; top: 0px; left: 0px; display: block; position: absolute; max-width: 10000px; z-index: 1;" data-events="auto" data-display="block" border="0"></div>
+                    <div u="thumb" data-events="auto" data-display="block" style="z-index: 1; display: none;">Slide Description 005
+                    </div>
+                </div>
+                <div style="width: 980px; height: 380px; top: 0px; left: -980px; position: absolute; z-index: 1; overflow: hidden; transform-style: flat;">
+                    <div style="width: 980px; height: 380px; top: 0px; left: 0px; display: block; position: absolute; overflow: hidden; background-color: rgba(0, 0, 0, 0); background-image: none;" data-u="bg"><img data-u="image" src="jquery_files/044.jpg" style="width: 980px; height: 380px; top: 0px; left: 0px; display: block; position: absolute; max-width: 10000px; z-index: 1;" data-events="auto" data-display="block" border="0"></div>
+                    <div u="thumb" data-events="auto" data-display="block" style="z-index: 1; display: none;">Slide Description 006
+                    </div>
+                </div>
+                <div style="width: 980px; height: 380px; top: 0px; left: -980px; position: absolute; z-index: 1; overflow: hidden; transform-style: flat;">
+                    <div style="width: 980px; height: 380px; top: 0px; left: 0px; display: block; position: absolute; overflow: hidden; background-color: rgba(0, 0, 0, 0); background-image: none;" data-u="bg"><img data-u="image" src="jquery_files/050.jpg" style="width: 980px; height: 380px; top: 0px; left: 0px; display: block; position: absolute; max-width: 10000px; z-index: 1;" data-events="auto" data-display="block" border="0"></div>
+                    <div u="thumb" data-events="auto" data-display="block" style="z-index: 1; display: none;">Slide Description 007
+                    </div>
+                </div>
+                <div style="width: 980px; height: 380px; top: 0px; left: -980px; position: absolute; z-index: 1; overflow: hidden; transform-style: flat;">
+                    <div style="width: 980px; height: 380px; top: 0px; left: 0px; display: block; position: absolute; overflow: hidden; background-color: rgba(0, 0, 0, 0); background-image: none;" data-u="bg"><img data-u="image" src="jquery_files/049.jpg" style="width: 980px; height: 380px; top: 0px; left: 0px; display: block; position: absolute; max-width: 10000px; z-index: 1;" data-events="auto" data-display="block" border="0"></div>
+                    <div u="thumb" data-events="auto" data-display="block" style="z-index: 1; display: none;">Slide Description 008
+                    </div>
+                </div>
+                <div style="width: 980px; height: 380px; top: 0px; left: -980px; position: absolute; z-index: 1; overflow: hidden; transform-style: flat;">
+                    <div style="width: 980px; height: 380px; top: 0px; left: 0px; display: block; position: absolute; overflow: hidden; background-color: rgba(0, 0, 0, 0); background-image: none;" data-u="bg"><img data-u="image" src="jquery_files/052.jpg" style="width: 980px; height: 380px; top: 0px; left: 0px; display: block; position: absolute; max-width: 10000px; z-index: 1;" data-events="auto" data-display="block" border="0"></div>
+                    <div u="thumb" data-events="auto" data-display="block" style="z-index: 1; display: none;">Slide Description 009
+                    </div>
+                </div>
+                <div style="width: 980px; height: 380px; top: 0px; left: -980px; position: absolute; z-index: 1; overflow: hidden; transform-style: flat;">
+                    <div style="width: 980px; height: 380px; top: 0px; left: 0px; display: block; position: absolute; overflow: hidden; background-color: rgba(0, 0, 0, 0); background-image: none;" data-u="bg"><img data-u="image" src="jquery_files/051.jpg" style="width: 980px; height: 380px; top: 0px; left: 0px; display: block; position: absolute; max-width: 10000px; z-index: 1;" data-events="auto" data-display="block" border="0"></div>
+                    <div u="thumb" data-events="auto" data-display="block" style="z-index: 1; display: none;">Slide Description 010
+                    </div>
+                </div>
+            </div></div></div><div style="display: block; position: absolute; width: 0px; height: 0px;"><a data-scale="0" href="https://www.jssor.com/" style="display: none; position: absolute; top: 0px; left: 0px;">image gallery</a></div>
+            <div style="display: block; position: absolute; top: 0px; left: 0px; width: 80px; height: 24px;"><div data-scale="0" title="Free" style="position:absolute;top:0px;left:0px;min-width:80px;height:24px;background-color:rgba(255,255,140,0.5);font-size:13px;line-height:24px;text-align:center;z-index:1000;">Free
+            </div></div>
+            <!-- Thumbnail Navigator -->
+            <div style="display: block; position: absolute; bottom: 0px; left: 0px; width: 980px; height: 50px;"><div u="thumbnavigator" style="position: absolute; bottom: 0px; left: 0px; width: 980px; height: 50px; color: rgb(255, 255, 255); overflow: hidden; cursor: default; background-color: rgba(0, 0, 0, 0.5); visibility: visible; top: 0px;" data-jssor-slider="1"><div style="display: block; position: absolute; top: 0px; left: 0px; width: 980px; height: 50px;"><div style="display: block; position: absolute; top: 0px; left: 0px; width: 980px; height: 50px;"><div u="slides" style="position: absolute; overflow: hidden; width: 980px; height: 50px; left: 0px; top: 0px; margin: 0px; padding: 0px; transform-style: flat; z-index: 0; pointer-events: none;"><div style="width: 980px; height: 50px; top: 0px; left: 0px; display: block; position: absolute; z-index: 0;"></div></div><div u="slides" style="position: absolute; overflow: hidden; width: 980px; height: 50px; left: 0px; top: 0px; margin: 0px; padding: 0px; transform-style: flat; z-index: 0;">
+                    
+                <div style="width: 980px; height: 50px; top: -50px; left: 0px; position: absolute; z-index: 1; overflow: hidden; transform-style: flat;"><div style="width: 980px; height: 50px; top: 0px; left: 0px; display: block; position: absolute; overflow: hidden; background-color: rgba(0, 0, 0, 0); background-image: none;" data-u="bg"></div><div u="prototype" style="position: absolute; top: 0px; left: 0px; width: 980px; height: 50px; z-index: 1;" data-jssor-button="1" data-events="auto" data-display="block" class="">
+                        <div u="thumb" data-events="auto" data-display="block" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; font-family: arial, helvetica, verdana; font-weight: normal; line-height: 50px; font-size: 16px; padding-left: 10px; box-sizing: border-box; z-index: 1;" class="">Slide Description 001
+                    </div>
+                    </div></div><div style="width: 980px; height: 50px; top: -50px; left: 0px; position: absolute; z-index: 1; overflow: hidden; transform-style: flat;"><div style="width: 980px; height: 50px; top: 0px; left: 0px; display: block; position: absolute; overflow: hidden; background-color: rgba(0, 0, 0, 0); background-image: none;" data-u="bg"></div><div u="prototype" style="position: absolute; top: 0px; left: 0px; width: 980px; height: 50px; z-index: 1;" data-jssor-button="1" data-events="auto" data-display="block" class="">
+                        <div u="thumb" data-events="auto" data-display="block" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; font-family: arial, helvetica, verdana; font-weight: normal; line-height: 50px; font-size: 16px; padding-left: 10px; box-sizing: border-box; z-index: 1;" class="">Slide Description 002
+                    </div>
+                    </div></div><div style="width: 980px; height: 50px; top: 0px; left: 0px; position: absolute; z-index: 1; overflow: hidden; transform-style: flat;"><div style="width: 980px; height: 50px; top: 0px; left: 0px; display: block; position: absolute; overflow: hidden; background-color: rgba(0, 0, 0, 0); background-image: none;" data-u="bg"></div><div u="prototype" style="position: absolute; top: 0px; left: 0px; width: 980px; height: 50px; z-index: 1;" data-jssor-button="1" data-events="auto" data-display="block" class="av">
+                        <div u="thumb" data-events="auto" data-display="block" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; font-family: arial, helvetica, verdana; font-weight: normal; line-height: 50px; font-size: 16px; padding-left: 10px; box-sizing: border-box; z-index: 1;" class="">Slide Description 003
+                    </div>
+                    </div></div><div style="width: 980px; height: 50px; top: 50px; left: 0px; position: absolute; z-index: 1; overflow: hidden; transform-style: flat;"><div style="width: 980px; height: 50px; top: 0px; left: 0px; display: block; position: absolute; overflow: hidden; background-color: rgba(0, 0, 0, 0); background-image: none;" data-u="bg"></div><div u="prototype" style="position: absolute; top: 0px; left: 0px; width: 980px; height: 50px; z-index: 1;" data-jssor-button="1" data-events="auto" data-display="block" class="">
+                        <div u="thumb" data-events="auto" data-display="block" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; font-family: arial, helvetica, verdana; font-weight: normal; line-height: 50px; font-size: 16px; padding-left: 10px; box-sizing: border-box; z-index: 1;" class="">Slide Description 004
+                    </div>
+                    </div></div><div style="width: 980px; height: 50px; top: -50px; left: 0px; position: absolute; z-index: 1; overflow: hidden; transform-style: flat;"><div style="width: 980px; height: 50px; top: 0px; left: 0px; display: block; position: absolute; overflow: hidden; background-color: rgba(0, 0, 0, 0); background-image: none;" data-u="bg"></div><div u="prototype" style="position: absolute; top: 0px; left: 0px; width: 980px; height: 50px; z-index: 1;" data-jssor-button="1" data-events="auto" data-display="block" class="">
+                        <div u="thumb" data-events="auto" data-display="block" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; font-family: arial, helvetica, verdana; font-weight: normal; line-height: 50px; font-size: 16px; padding-left: 10px; box-sizing: border-box; z-index: 1;" class="">Slide Description 005
+                    </div>
+                    </div></div><div style="width: 980px; height: 50px; top: -50px; left: 0px; position: absolute; z-index: 1; overflow: hidden; transform-style: flat;"><div style="width: 980px; height: 50px; top: 0px; left: 0px; display: block; position: absolute; overflow: hidden; background-color: rgba(0, 0, 0, 0); background-image: none;" data-u="bg"></div><div u="prototype" style="position: absolute; top: 0px; left: 0px; width: 980px; height: 50px; z-index: 1;" data-jssor-button="1" data-events="auto" data-display="block" class="">
+                        <div u="thumb" data-events="auto" data-display="block" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; font-family: arial, helvetica, verdana; font-weight: normal; line-height: 50px; font-size: 16px; padding-left: 10px; box-sizing: border-box; z-index: 1;" class="">Slide Description 006
+                    </div>
+                    </div></div><div style="width: 980px; height: 50px; top: -50px; left: 0px; position: absolute; z-index: 1; overflow: hidden; transform-style: flat;"><div style="width: 980px; height: 50px; top: 0px; left: 0px; display: block; position: absolute; overflow: hidden; background-color: rgba(0, 0, 0, 0); background-image: none;" data-u="bg"></div><div u="prototype" style="position: absolute; top: 0px; left: 0px; width: 980px; height: 50px; z-index: 1;" data-jssor-button="1" data-events="auto" data-display="block" class="">
+                        <div u="thumb" data-events="auto" data-display="block" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; font-family: arial, helvetica, verdana; font-weight: normal; line-height: 50px; font-size: 16px; padding-left: 10px; box-sizing: border-box; z-index: 1;" class="">Slide Description 007
+                    </div>
+                    </div></div><div style="width: 980px; height: 50px; top: -50px; left: 0px; position: absolute; z-index: 1; overflow: hidden; transform-style: flat;"><div style="width: 980px; height: 50px; top: 0px; left: 0px; display: block; position: absolute; overflow: hidden; background-color: rgba(0, 0, 0, 0); background-image: none;" data-u="bg"></div><div u="prototype" style="position: absolute; top: 0px; left: 0px; width: 980px; height: 50px; z-index: 1;" data-jssor-button="1" data-events="auto" data-display="block" class="">
+                        <div u="thumb" data-events="auto" data-display="block" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; font-family: arial, helvetica, verdana; font-weight: normal; line-height: 50px; font-size: 16px; padding-left: 10px; box-sizing: border-box; z-index: 1;" class="">Slide Description 008
+                    </div>
+                    </div></div><div style="width: 980px; height: 50px; top: -50px; left: 0px; position: absolute; z-index: 1; overflow: hidden; transform-style: flat;"><div style="width: 980px; height: 50px; top: 0px; left: 0px; display: block; position: absolute; overflow: hidden; background-color: rgba(0, 0, 0, 0); background-image: none;" data-u="bg"></div><div u="prototype" style="position: absolute; top: 0px; left: 0px; width: 980px; height: 50px; z-index: 1;" data-jssor-button="1" data-events="auto" data-display="block" class="">
+                        <div u="thumb" data-events="auto" data-display="block" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; font-family: arial, helvetica, verdana; font-weight: normal; line-height: 50px; font-size: 16px; padding-left: 10px; box-sizing: border-box; z-index: 1;" class="">Slide Description 009
+                    </div>
+                    </div></div><div style="width: 980px; height: 50px; top: -50px; left: 0px; position: absolute; z-index: 1; overflow: hidden; transform-style: flat;"><div style="width: 980px; height: 50px; top: 0px; left: 0px; display: block; position: absolute; overflow: hidden; background-color: rgba(0, 0, 0, 0); background-image: none;" data-u="bg"></div><div u="prototype" style="position: absolute; top: 0px; left: 0px; width: 980px; height: 50px; z-index: 1;" data-jssor-button="1" data-events="auto" data-display="block" class="">
+                        <div u="thumb" data-events="auto" data-display="block" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; font-family: arial, helvetica, verdana; font-weight: normal; line-height: 50px; font-size: 16px; padding-left: 10px; box-sizing: border-box; z-index: 1;" class="">Slide Description 010
+                    </div>
+                    </div></div></div></div></div></div></div>
+            <!-- Arrow Navigator -->
+            <div style="display: block; position: absolute; top: 162.5px; left: 25px; width: 55px; height: 55px;"><div data-u="arrowleft" class="jssora061" style="width: 55px; height: 55px; top: 0px; left: 0px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75" data-jssor-button="1" data-nofreeze="1">
+                <svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                    <path class="a" d="M11949,1919L5964.9,7771.7c-127.9,125.5-127.9,329.1,0,454.9L11949,14079"></path>
+                </svg>
+            </div></div>
+            <div style="display: block; position: absolute; top: 162.5px; right: 25px; width: 55px; height: 55px;"><div data-u="arrowright" class="jssora061" style="width: 55px; height: 55px; top: 0px; right: 25px; left: 0px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75" data-jssor-button="1" data-nofreeze="1">
+                <svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                    <path class="a" d="M5869,1919l5984.1,5852.7c127.9,125.5,127.9,329.1,0,454.9L5869,14079"></path>
+                </svg>
+            </div></div>
+            <div style="display: block; position: absolute; top: 2px; right: 2px; width: 70px; height: 92px;"><div data-interaction="user-commands" class="cmd-box" style="width: 70px; height: 92px; top: 0px; left: 0px; visibility: visible;" data-scale=".2" data-scale-top=".5" data-scale-right=".5">
+                <div data-command="jssor-editslider" class="cmd-btn cmd-btn-slider" title="edit this slider" style="opacity: 1; pointer-events: all;">Edit 
+                </div>
+                <div data-command="jssor-getslider" class="cmd-btn cmd-btn-slider" title="download this slider">Get 
+                </div>
+                <div data-command="jssor-share" class="cmd-btn cmd-btn-slider" title="share">Share 
+                </div>
+                <div data-command="jssor-loginslider" class="cmd-btn cmd-btn-slider" title="login">Login </div>
+            </div></div>
+        </div>
+        <script type="text/javascript">jssor_1_slider_init();
+        </script>
+        <!-- #endregion Jssor Slider End -->
+        
+        <script src="jquery_files/jssor.js"></script>
+        <script>
+            jssor_user_commands_init({ accessControl: {"fileInfo":{"id":0,"name":"demos/banner-slider.slider","isReserved":1,"isReadonly":1},"authorInfo":{"userName":"","memberPlan":0},"accessInfo":{"limitedSlides":0,"limitedTransitions":0,"maxUploadFileSize":307200}}, settings: {"resLibCdnUrl":"//jssors8.azureedge.net"} });
+        </script>
+
+    
+    <!-- demo sliders begin -->
+    <div class="ad_title">
+        <div id="ad_title_banner" class="ad_title_banner">
+            <!-- 728x90_second_banner -->
+            <ins id="ad_banner_728_second" class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-5323311666976160" data-ad-slot="9380985535" data-adsbygoogle-status="done" data-ad-status="filled"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent;" tabindex="0" title="Advertisement" aria-label="Advertisement"><ins id="aswift_0_anchor" style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent;"><iframe id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0;width:728px;height:90px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" src="jquery_files/ads.htm" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" data-google-container-id="a!1" data-load-complete="true" data-google-query-id="CPTp74bqm_ICFckd1Qod1eAKlQ" width="728" height="90" frameborder="0"></iframe></ins></ins></ins>
+
+            <script>
+                new function () {
+                    var availableWidth = document.body.clientWidth || 728;
+                    window.screen && window.screen.availWidth && (availableWidth = Math.max(availableWidth, window.screen.availWidth));
+
+                    if (availableWidth < 728) {
+                        var adTitleBanner = document.getElementById("ad_title_banner");
+                        adTitleBanner && adTitleBanner.parentNode.removeChild(adTitleBanner);
+                    }
+                    else {
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    }
+                };
+            </script>
+        </div>
+
+        <div class="ad_title_caption" style="position: absolute; top: 0px; left: 0px; margin-left: 30px; line-height: 90px; font-size: 26px; color: #ff8400; ">
+            <span>Demo - Sliders</span>
+        </div>
+    </div>
+    
+    <div style="margin: 0 auto; width: 100%; max-width: 980px; background-color: #EAEAEA; overflow: hidden;">
+        <div class="thumb_wrapper">
+            <div class="thumb">
+                <div class="side_mark">Free</div>
+                <a class="thumbb" href="https://www.jssor.com/demos/full-width-slider.slider">
+                    <div class="thumbi"><img src="jquery_files/thumb-full-width-slider-300.jpg" alt="fashion slider"></div>
+                    <div class="thumbc">Full Width Slider</div>
+                </a>
+            </div>
+            <div class="thumb">
+                <div class="side_mark">Free</div>
+                <a class="thumbb" href="https://www.jssor.com/demos/image-slider.slider">
+                    <div class="thumbi"><img src="jquery_files/thumb-image-slider-300.jpg" alt="image slider jquery javascript+html code example for website design, website development, web design, web development, web designer, web developer, website designer, website developer, website, website builder, web page"></div>
+                    <div class="thumbc">Image Slider</div>
+                </a>
+            </div>
+            <div class="thumb">
+                <div class="side_mark">Free</div>
+                <a class="thumbb" href="https://www.jssor.com/demos/ski/ski.slider">
+                    <div class="thumbi"><img src="jquery_files/thumb-ski-slider-300.jpg" alt="ski slider"></div>
+                    <div class="thumbc">Ski Slider</div>
+                </a>
+            </div>
+            <div class="thumb">
+                <div class="side_mark">Free</div>
+                <a class="thumbb" href="https://www.jssor.com/demos/product/product.slider">
+                    <div class="thumbi"><img src="jquery_files/thumb-product-slider-300.jpg" alt="product slider"></div>
+                    <div class="thumbc">Product Slider</div>
+                </a>
+            </div>
+            <div class="thumb">
+                <div class="side_mark">Free</div>
+                <a class="thumbb" href="https://www.jssor.com/demos/village-tour/village-tour.slider">
+                    <div class="thumbi"><img src="jquery_files/thumb-village-tour-slider-300.jpg" alt="village-tour"></div>
+                    <div class="thumbc">Village Tour Slider</div>
+                </a>
+            </div>
+            <div class="thumb">
+                <div class="side_mark">Free</div>
+                <a class="thumbb" href="https://www.jssor.com/demos/sport/sport.slider">
+                    <div class="thumbi"><img src="jquery_files/thumb-sport-slider-300.jpg" alt="sport slider"></div>
+                    <div class="thumbc">Sport Slider</div>
+                </a>
+            </div>
+            <div class="thumb">
+                <div class="side_mark">Premium</div>
+                <a class="thumbb" href="https://www.jssor.com/premium/fashion/fashion.slider">
+                    <div class="thumbi"><img src="jquery_files/thumb-fashion-slider-300.jpg" alt="fashion slider"></div>
+                    <div class="thumbc">Fashion Slider</div>
+                </a>
+            </div>
+            <div class="thumb">
+                <div class="side_mark">Ad</div>
+                <div class="ad_rect">
+                    <!-- 300x250_grid_rectangle_up -->
+                    <ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-5323311666976160" data-ad-slot="9752854738" data-adsbygoogle-status="done" data-ad-status="filled"><ins id="aswift_1_expand" style="display:inline-table;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent;" tabindex="0" title="Advertisement" aria-label="Advertisement"><ins id="aswift_1_anchor" style="display:block;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent;"><iframe id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;border:0;width:300px;height:250px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" src="jquery_files/ads.htm" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" data-google-container-id="a!2" data-load-complete="true" data-google-query-id="CNOI84bqm_ICFQFjlgodnSEBsA" width="300" height="250" frameborder="0"></iframe></ins></ins></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+            </div>
+            <div class="thumb">
+                <div class="side_mark">Premium</div>
+                <a class="thumbb" href="https://www.jssor.com/premium/music/music.slider">
+                    <div class="thumbi"><img src="jquery_files/thumb-music-slider-300.jpg" alt="music slider"></div>
+                    <div class="thumbc">Music Slider</div>
+                </a>
+            </div>
+            <div class="thumb">
+                <div class="side_mark">Premium</div>
+                <a class="thumbb" href="https://www.jssor.com/premium/food/food.slider">
+                    <div class="thumbi"><img src="jquery_files/thumb-food-slider-300.jpg" alt="food slider"></div>
+                    <div class="thumbc">Food Slider</div>
+                </a>
+            </div>
+            <div class="thumb">
+                <div class="side_mark">Premium</div>
+                <a class="thumbb" href="https://www.jssor.com/premium/interior-design/interior-design.slider">
+                    <div class="thumbi"><img src="jquery_files/thumb-interior-design-slider-300.jpg" alt="interior design slider"></div>
+                    <div class="thumbc">Intgerior Design Slider</div>
+                </a>
+            </div>
+            <div class="thumb">
+                <div class="side_mark">Premium</div>
+                <a class="thumbb" href="https://www.jssor.com/premium/team/team.slider">
+                    <div class="thumbi"><img src="jquery_files/thumb-team-slider-300.jpg" alt="team slider"></div>
+                    <div class="thumbc">Team Slider</div>
+                </a>
+            </div>
+            <div class="thumb">
+                <div class="side_mark">Premium</div>
+                <a class="thumbb" href="https://www.jssor.com/premium/testimonial/testimonial.slider">
+                    <div class="thumbi"><img src="jquery_files/thumb-testimonial-slider-300.jpg" alt="testimonial"></div>
+                    <div class="thumbc">Testimonial Slider</div>
+                </a>
+            </div>
+            <div class="thumb">
+                <div class="side_mark">Premium</div>
+                <a class="thumbb" href="https://www.jssor.com/premium/sales/sales.slider">
+                    <div class="thumbi"><img src="jquery_files/thumb-sales-slider-300.jpg" alt="sales slider"></div>
+                    <div class="thumbc">Sales Slider</div>
+                </a>
+            </div>
+            <div class="thumb">
+                <div class="side_mark">Premium</div>
+                <a class="thumbb" href="https://www.jssor.com/premium/digital-marketing/digital-marketing.slider">
+                    <div class="thumbi"><img src="jquery_files/thumb-digital-marketing-300.jpg" alt="digital marketing slider"></div>
+                    <div class="thumbc">Digital Marketing Slider</div>
+                </a>
+            </div>
+            <div class="thumb">
+                <div class="side_mark">Free</div>
+                <a class="thumbb" href="https://www.jssor.com/demos/image-gallery.slider">
+                    <div class="thumbi"><img src="jquery_files/t-image-gallery.jpg" alt="image gallery jquery javascript+html code example for website design, website development, web design, web development, web designer, web developer, website designer, website developer, website, website builder, web page"></div>
+                    <div class="thumbc">Image Gallery</div>
+                </a>
+            </div>
+            <div class="thumb">
+                <div class="side_mark">Ad</div>
+                <div class="ad_rect">
+                    <!-- 300x250_grid_rectangle_below -->
+                    <ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-5323311666976160" data-ad-slot="7803931655" data-adsbygoogle-status="done" data-ad-status="filled"><ins id="aswift_2_expand" style="display:inline-table;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent;" tabindex="0" title="Advertisement" aria-label="Advertisement"><ins id="aswift_2_anchor" style="display:block;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent;"><iframe id="aswift_2" name="aswift_2" style="left:0;position:absolute;top:0;border:0;width:300px;height:250px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" src="jquery_files/ads.htm" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" data-google-container-id="a!3" data-load-complete="true" data-google-query-id="CJWl84bqm_ICFcG6lgod9wIGKA" width="300" height="250" frameborder="0"></iframe></ins></ins></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+            </div>
+            <div class="thumb">
+                <div class="side_mark">Free</div>
+                <a class="thumbb" href="https://www.jssor.com/demos/image-gallery-with-vertical-thumbnail.slider">
+                    <div class="thumbi"><img src="jquery_files/t-image-gallery-with-vertical-thumbnail.jpg" alt="image gallery with vertical thumbnail jquery javascript+html code example for website design, website development, web design, web development, web designer, web developer, website designer, website developer, website, website builder, web page"></div>
+                    <div class="thumbc">Image Gallery with Vertical Thumbnail</div>
+                </a>
+            </div>
+            <div class="thumb">
+                <div class="side_mark">Free</div>
+                <a class="thumbb" href="https://www.jssor.com/demos/banner-slider.slider">
+                    <div class="thumbi"><img src="jquery_files/t-banner-slider.jpg" alt="banner slider jquery javascript+html code example for website design, website development, web design, web development, web designer, web developer, website designer, website developer, website, website builder, web page"></div>
+                    <div class="thumbc">Banner Slider</div>
+                </a>
+            </div>
+            <div class="thumb">
+                <div class="side_mark">Free</div>
+                <a class="thumbb" href="https://www.jssor.com/demos/carousel-slider.slider">
+                    <div class="thumbi"><img src="jquery_files/t-carousel-slider.jpg" alt="carousel jquery javascript+html code example for website design, website development, web design, web development, web designer, web developer, website designer, website developer, website, website builder, web page"></div>
+                    <div class="thumbc">Carousel Slider</div>
+                </a>
+            </div>
+            <div class="thumb">
+                <div class="side_mark">Free</div>
+                <a class="thumbb" href="https://www.jssor.com/demos/banner-rotator.slider">
+                    <div class="thumbi"><img src="jquery_files/t-banner-rotator.jpg" alt="banner rotator jquery javascript+html code example for website design, website development, web design, web development, web designer, web developer, website designer, website developer, website, website builder, web page"></div>
+                    <div class="thumbc">Banner Rotator</div>
+                </a>
+            </div>
+            <div class="thumb">
+                <div class="side_mark">Free</div>
+                <a class="thumbb" href="https://www.jssor.com/demos/scrolling-logo-thumbnail-slider.slider">
+                    <div class="thumbi"><img src="jquery_files/t-scrolling-logo-thumbnail-slider.jpg" alt="scrolling logo thumbnail slider jquery javascript+html code example for website design, website development, web design, web development, web designer, web developer, website designer, website developer, website, website builder, web page"></div>
+                    <div class="thumbc">Scrolling Logo/Thumbnail Slider</div>
+                </a>
+            </div>
+
+
+            <div class="thumb">
+                <div class="side_mark">Free</div>
+                <a class="thumbb" href="https://www.jssor.com/demos/different-size-photo-slider.slider">
+                    <div class="thumbi"><img src="jquery_files/t-different-size-photo-slider.jpg" alt="different size photo slider jquery javascript+html code example for website design, website development, web design, web development, web designer, web developer, website designer, website developer, website, website builder, web page"></div>
+                    <div class="thumbc">Different Size Photo Slider</div>
+                </a>
+            </div>
+
+            <div class="thumb">
+                <div class="side_mark">Free</div>
+                <a class="thumbb" href="https://www.jssor.com/demos/nearby-image-partial-visible-slider.slider">
+                    <div class="thumbi"><img src="jquery_files/t-nearby-image-partial-visible-slider.jpg" alt="nearby image partial visible slider jquery javascript+html code example for website design, website development, web design, web development, web designer, web developer, website designer, website developer, website, website builder, web page"></div>
+                    <div class="thumbc">Nearby Image Partial Visible Slider</div>
+                </a>
+            </div>
+            <div class="thumb">
+                <div class="side_mark">Free</div>
+                <a class="thumbb" href="https://www.jssor.com/demos/full-window-for-mobile.slider" target="_blank">
+                    <div class="thumbi"><img src="jquery_files/t-full-window-for-mobile.jpg" alt="Full Window Slider Mobile Image Slider/Slideshow/Gallery/Banner/Rotator/Scroller"></div>
+
+                    <div class="thumbc">Full Window Slider (Mobile)</div>
+                </a>
+            </div>
+            <div class="thumb">
+                <div class="side_mark">Free</div>
+                <a class="thumbb" href="https://www.jssor.com/demos/full-window-for-pc.slider" target="_blank">
+                    <div class="thumbi"><img src="jquery_files/t-full-window-for-pc.jpg" alt="Full Window Slider PC Image Carousel/Slideshow/Gallery/Banner/Rotator/Scroller"></div>
+
+                    <div class="thumbc">Full Window Slider (PC)</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- demo sliders end -->
+
+    <div style="height: 10px; clear: both;"></div>
+
+        <!--#endregion-->
+
+        
+
+
+        <!--#region footer-->
+        <div class="footer">
+            <span class="copyright">&nbsp;Jssor Slider 2009-2018</span>
+
+            
+<!--#region share icon footer-->
+<div data-interaction="user-commands" class="cmd-box">
+    <div data-command="jssor-share" class="cmd-btn" title="share"></div>
+    <div data-command="jssor-qrcode" class="cmd-btn" title="QR code"></div>
+</div>
+<!--#region-->
+
+        </div>
+        <!--#endregion-->
+    </form>
+
+
+<ins class="adsbygoogle adsbygoogle-noablate" style="display: none !important;" data-adsbygoogle-status="done" data-ad-status="unfilled"><ins id="aswift_3_expand" style="display:inline-table;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent;" tabindex="0" title="Advertisement" aria-label="Advertisement"><ins id="aswift_3_anchor" style="display:block;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent;"><iframe id="aswift_3" name="aswift_3" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" src="jquery_files/ads_004.htm" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" data-google-container-id="a!4" data-load-complete="true" frameborder="0"></iframe></ins></ins></ins><iframe id="google_osd_static_frame_3142734933137" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;"></iframe><iframe src="jquery_files/aframe.htm" style="display: none;" width="0" height="0"></iframe><div class="jd-menu" style="position: fixed; visibility: visible; width: 280px; z-index: 100005; top: 66px; left: 810.5px;"><div class="left-bar"></div><div data-listitem="0" class="item"><span class="icon jic-download"></span><span class="text" data-u="text">Download Standard Code</span><span class="shortcut"></span></div><div data-listitem="1" class="item active"><span class="icon jic-download"></span><span class="text" data-u="text">Download jQuery Code</span><span class="shortcut"></span></div><div data-listitem="2" class="item disabled"><span class="icon jic-download"></span><span class="text" data-u="text">Download Minimized Code</span><span class="shortcut"></span></div><div class="split" style=""><span class="icon"></span><span class="text" data-u="text"></span><span class="shortcut"></span></div><div data-listitem="4" class="item disabled"><span class="icon jic-export"></span><span class="text" data-u="text">Export Copy/Paste Code ...</span><span class="shortcut"></span></div><div class="split" style=""><span class="icon"></span><span class="text" data-u="text"></span><span class="shortcut"></span></div><div data-listitem="6" class="item"><span class="icon jic-copy"></span><span class="text" data-u="text">Save As...</span><span class="shortcut"></span></div><div class="split" style=""><span class="icon"></span><span class="text" data-u="text"></span><span class="shortcut"></span></div><div data-listitem="8" class="item"><span class="icon jic-help"></span><span class="text" data-u="text">Help - Export Code</span><span class="shortcut"></span></div><div class="split" style=""><span class="icon"></span><span class="text" data-u="text"></span><span class="shortcut"></span></div><div data-listitem="10" class="item"><span class="icon jic-account"></span><span class="text" data-u="text">Login</span><span class="shortcut"></span></div><div data-listitem="11" style="display: none;" class="item"><span class="icon jic-account"></span><span class="text" data-u="text">Logout</span><span class="shortcut"></span></div></div></body><iframe id="google_esf" name="google_esf" src="jquery_files/zrt_lookup.htm" style="display: none;"></iframe></html>

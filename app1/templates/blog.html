@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+
+<div class="row text-center p-3">
+<div class="col-md-12 p-3">
+<h2><b>BLOG</b></h2>
+<h5>Recent Articles</h5>
+</div>
+</div>
+
+<div class="row p-2">
+
+<div class="col-md-4">
+<img src="{% static 'img/a6.jpg' %}" height="350" width="100%" />
+<h6>APRIl 24,2021</h6>
+<h5 style="font-family:verdana;">We Can Help Find a Location that’s Right for You</h5>
+<p>When choosing a wedding reception venue, catering may not be at the forefront of your mind. However, if you want your reception catering to be everything you’ve dreamed about, you need to verify a few key details.
+
+Although wedding reception caterers can work around almost any conditions or circumstances, you can make it easier on everyone if you make sure that your venue provides a few critical features.</p>
+</div>
+
+<div class="col-md-4">
+<img src="{% static 'img/a7.jpg' %}" height="350" width="100%" />
+<h6>APRIL 14,2021</h6>
+<h5 style="font-family:verdana;">Catering Services for Fabulous Corporate Events</h5>
+<p>If you're planning a corporate breakfast meeting, a professional catering company can help ensure a smooth, stress-free event.
+
+Whether you’ll have ten attendees or 100, scheduling meetings and presentations in the morning will help ensure the success of the event and, in many cases, save you money on your food and venue costs.</p>
+</div>
+
+<div class="col-md-4">
+<img src="{% static 'img/a9.jpg' %}" height="350" width="100%" />
+<h6>APRIL 4,2021</h6>
+<h5 style="font-family:verdana;">Planning a Wedding Menu Can Be Daunting</h5>
+<p>Keep calm and enjoy your wedding day. But is that even possible?
+
+If you’re in the process of planning a wedding, you may be skeptical about the potential of keeping your nerves under control on the big day. But professional wedding caterers – who handle hundreds or even thousands of events every year – have perfected techniques for keeping the panic at bay.</p>
+</div>
+</div>
+
+{% endblock %}

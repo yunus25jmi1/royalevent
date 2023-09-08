@@ -1,0 +1,86 @@
+{% load staticfiles %}
+<html>
+<head>
+<tittle>first html page</tittle>
+<link href="{% static 'bootstrap/css/bootstrap.min.css' %}" type="text/css" rel="stylesheet" />
+<link href="{% static 'bootstrap/css/bootstsrap.min.css' %}" type="text/css" rel="stylesheet">
+<link href+"{% static 'bootstrap/css/bootstrap.mim.css' %}" type="text/css" rel="stylesheet" />
+</head>
+<body>
+
+<div class="container">
+<div class="col-md-6">
+<form>
+
+
+<div class="form-group">
+<lable for="name">Enter name</lable>
+<input type="text" class="form-control" id="name" placeholder="Enter name" />
+</div>
+
+<div class="form-group">
+<lable for="phone">Enter phone</lable>
+<input type="tel" class="form-control" id="phone" placeholder="Enter phone" />
+</div>
+
+<div class="form-group">
+<lable for="email">Enter email</lable>
+<input type="email" required class="form-control" id="email" placeholder="Enter email" />
+</div>
+<div class="form-group">
+<lable for="password">Enter password</lable>
+<input type="password" required class="form-control" id="password" placeholder="Enter password" />
+</div>
+
+<div class="form-group">
+<lable for="adress">Enter Adress</lable>
+<input type="Adress" class="form-control" id="Adress" placeholder="Enter Ardess" />
+</div>
+
+<div class="form-group">
+<lable for="pic">upload pic</lable>
+<input type="file" class="form-control" id="pic" placeholder="" />
+</div>
+
+<div class="form-group">
+<lable for="gender">gender</lable>
+Male <input type="radio" name="gernder" />
+female <inpur type="radio" name="gender" />
+</div>
+
+<div class="form-group">
+<lable for="course">course</lable>
+<select class="form-control" id="course">
+<option value="">-select course-</option>
+<option>HTML</option>
+<option>CSS</option>
+<option>PYTHON</option>
+<option>JAVA</option>
+<option>DIJANGO</option>
+</select>
+</div>
+<div class="form group">
+<lable for="accept">I accept the terms</lable>
+<input type="checkbox" />
+</div>
+
+<div class="form-group">
+
+<input type="submit" class="btn btn-info" />
+<input type="reset" class="btn btn-"danger" />
+</div>
+
+
+
+
+</form>
+</div>
+
+</div>
+</body>
+</html>
+
+
+
+
+

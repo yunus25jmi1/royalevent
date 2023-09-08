@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+
+<div class="row text-center p-3">
+<div class="col-md-12 p-3">
+<h6>CATERING</h6>
+<h2><b>Our Menu</b></h2>
+</div>
+</div>
+
+<div class="row">
+
+{% for pro in object_list %}
+<div class="col-md-3">
+<img src="/media/{{ pro.pic }}" height="300" width="100%" />
+<h3>{{ pro.name }}</h3>
+</div>
+{%endfor %}
+
+</div>
+
+<!--<div class="row p-5">
+
+<div class="col-md-3 ">
+<img src="{% static 'img/a6.jpg' %}" height="300" width="100%" />
+<h4>CANAPES</h4>
+</div>
+
+<div class="col-md-3">
+<img src="{% static 'img/a7.jpg' %}" height="300" width="100%" />
+<h4 style="font-family:verdana;">SMALL PLATES</h4>
+</div>
+
+<div class="col-md-3">
+<img src="{% static 'img/a8.jpg' %}" height="300" width="100%" />
+<h4 style="font-family:verdana;">SWEETS</h4>
+</div>
+
+<div class="col-md-3">
+<img src="{% static 'img/a9.jpg' %}" height="300" width="100%" />
+<h4 style="font-family:verdana;">DRINKS</h4>
+</div>
+</div>-->
+
+<div class="row text-center p-3">
+<div class="col-md-12 p-3">
+<h5>and much more sensational food & drinks...</h5>
+</div>
+</div>
+
+
+{% endblock %}

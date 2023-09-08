@@ -1,0 +1,29 @@
+/*#product{ color:black; background:black; padding:5px 35px 5px 35px;}
+#nav a{ color:black;}
+#nav{ background:green;} 
+#nav{ background:url('image/a1.jpg);} padding-top:50px; padding-bottom:50px;}
+#nav{ background:url('image/a2.jpg);} padding-top:300px; padding-bottom:500px;}
+*/
+banner{ background:url('img/1.jpg'); padding:200px; background-size:cover; color:white;}
+
+#product{ color:black; background:green; padding:10px 20px 10px 20px;}
+#nav a{ color:black;}
+#nav{ background:green;}
+#about{ background:url('img/1.jpg'); padding:200px; background-size:cover; color:white;} 
+#book{ background:url('img/a15.jpg'); padding:200px; background-size:cover; color:white;}  
+
+.mycls{
+	color:blue;
+	text-decoration:underline;
+	font-size:33px;
+	
+}
+
+.match{ color:green; text-decoration:underline;}
+.unmatch{ color:red; font-style:italic;}
+
+#demo img{ height:480px; width:100%;}
+
+.parts{ background:white; padding:10px; border-radius:20px
+box-shadow:5px 5px 5px 5px black;}
+#services h5{ line-height:50px;}

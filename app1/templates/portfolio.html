@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+
+<div class="row text-center p-3">
+<div class="col-md-12 p-2">
+<h2><b>PORTFOLIO</b></h2>
+</div>
+</div>
+
+
+<div class="p-3">
+
+<img src="{% static 'img/3.jpg' %}" height="350px" width="300px" class="image" />
+<img src="{% static 'img/a5.jpg' %}" height="350px" width="300px" class="image" />
+<img src="{% static 'img/a21.jpg' %}" height="350px" width="300px" class="image" />
+<img src="{% static 'img/a22.jpg' %}" height="350px" width="300px" class="image" />
+</div>
+
+<div class="p-3">
+
+<img src="{% static 'img/a23.jpg' %}" height="350px" width="300px" class="image" />
+<img src="{% static 'img/a8.jpg' %}" height="350px" width="300px" class="image" />
+<img src="{% static 'img/a24.jpg' %}" height="350px" width="300px" class="image" />
+<img src="{% static 'img/a9.jpg' %}" height="350px" width="300px" class="image" />
+</div>
+
+<div class="col-md-12 p-5" style="position:absolute;
+top:0px; left:0px; background:rgba(0,0,0,0.8); z-index:99999;
+display:none;" id="topdiv">
+<button class="btn btn-danger btn-xs">close</button>
+<br>
+<img src="{% static 'img/a5.jpg' %}" height="500px" width="100%" />
+</div>
+
+<script src="{% static 'jquery.js' %}"></script>
+<script>
+$(document).ready(function(){
+$(".image").click(function(){
+var s=$(this).prop('src');
+$("#topdiv img").attr('src',s);
+$("#topdiv").slideDown(1000);
+});
+
+$("#topdiv button").click(function(){
+$("#topdiv").fadeOut(1000);
+});
+});
+
+</script>
+
+{% endblock %}

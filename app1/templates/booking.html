@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+
+<div class="row bg-light text-center p-5">
+<div class="col-md-12 p-3">
+<h1><b>BOOKING</b></h1>
+</div>
+
+<div class="col-md-10 bg-light text-dark offset-1 p-3">
+<form action="/insertbooking/" method="post" enctype="multipart/form-data">
+{% csrf_token %}
+
+
+
+<div class="form-group">
+<label for="name">Enter name</label>
+<input type="name" class="form-control" name="name" placeholder="Enter name" />
+</div>
+
+<div class="form-group">
+<label for="phone">Enter phone</label>
+<input type="phone" class="form-control" name="phone" placeholder="Enter phone" />
+</div>
+
+<div class="form-group">
+<label for="email">Enter email</label>
+<input type="email" class="form-control" name="email" placeholder="Enter email" />
+</div>
+
+
+<div class="form-group">
+<label for="event">Enter event</label>
+<input type="event" class="form-control" name="event" placeholder="Enter event" />
+</div>
+
+<div class="form-group">
+<label for="persons">Enter No. of persons</label>
+<input type="persons" class="form-control" name="persons" placeholder="Enter persons" />
+</div>
+
+
+<div class="form-group">
+<label for="venue">Enter venue</label>
+<input type="venue" class="form-control" name="venue" placeholder="Enter venue" />
+</div>
+
+<div class="form-group">
+<label for="time">Enter time</label>
+<input type="time" class="form-control" name="time" placeholder="Enter time" />
+</div>
+
+<div class="form-group">
+<label for="date">Enter date</label>
+<input type="date" class="form-control" name="date" placeholder="Enter date" />
+</div>
+
+
+<div class="form-group">
+<label for="pic">Upload your ID Proof</label>
+<input type="file" class="form control" name="pic" placeholder="" />
+</div>
+
+<div class="form group">
+<label for="accept">I agree that my submitted data is being collected and stored.</label>
+<input type="checkbox" />
+</div>
+
+<div class="row text-center">
+<div class="col-md-12">
+<button class="btn btn-success">DONE</button>
+</div>
+</div>
+
+</form>
+</div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+
+
+<div class="row bg-light text-dark text-center p-3">
+
+<div class="col-md-12 p-5">
+<h2><b>CONTACT US</b></h2>
+<h1><b>Leave a Feedback or<br>Ask a Question</b></h1>
+</div>
+
+<div class="col-md-10 offset-1 p-3">
+<form action="/insertform/" method="post">
+{% csrf_token %}
+
+
+
+<div class="form-group">
+<label for="name">Enter name</label>
+<input type="name" class="form-control" name="name" placeholder="Enter name" />
+</div>
+
+<div class="form-group">
+<label for="email">Enter email</label>
+<input type="email" class="form-control" name="email" placeholder="Enter email" />
+</div>
+
+<div class="form-group">
+<label for="message">Enter message</label>
+<input type="message" class="form-control" name="message" placeholder="Enter message" />
+</div>
+
+<div class="form group">
+<label for="accept">I agree that my submitted data is being collected and stored.</label>
+<input type="checkbox" />
+</div>
+
+<div class="form-group">
+<input value="SEND MESSAGE" type="submit" class="btn btn-success">
+</div>
+
+</form>
+</div>
+
+
+<div class="col-md-6">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3447.921788864555!2d74.94677531453397!3d30.210779617651824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391732a3a218e787%3A0x4d942876b00d9f6e!2sAjit%20Road%20Bathinda!5e0!3m2!1sen!2sin!4v1628750048114!5m2!1sen!2sin" width="200%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+
+</div>
+
+{% endblock %}

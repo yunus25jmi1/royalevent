@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+<div>
+<button onclick="f()">Click</button>
+</div>
+
+<script>
+function f()
+{
+//alert('this is an alert');
+//var a=prompt('Enter your name');
+//alert(a);
+
+var a=confirm('Do you really want to continue?');
+if(a==true)
+alert('continue);
+else
+alert('cancelled');
+
+}
+</script>
+
+
+{% endblock %}

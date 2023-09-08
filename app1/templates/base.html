@@ -1,0 +1,90 @@
+{% load staticfiles %}
+<html>
+<head>
+<title>Royal Event</title>
+<link href="{% static 'bootstrap/css/bootstrap.min.css' %}"
+type="text/css" rel="stylesheet" />
+<link href="{% static 'bootstrap/css/bootstrap-grid.min.css' %}"
+type="text/css" rel="stylesheet" />
+<link href="{% static 'bootstrap/css/bootstrap-reboot.min.css' %}"
+type="text/css" rel="stylesheet" />
+
+<link href="{% static 'style.css' %}" type="text/css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="{% static 'jquery.js'%}"></script>
+<script src="{% static 'bootstrap/js/bootstrap.min.js'%}"></script>
+</head>
+<body>
+
+
+
+<div class="container-fluid">
+<div class="row bg-success" id="nav">
+<nav class="navbar navbar-expand-md navbar-light">
+<ul class="navbar-nav">
+<li class="nav-item"><a class="nav-link" href="/home/">HOME</a><li>
+<li class="nav-item"><a class="nav-link" href="/aboutus/">ABOUT US</a><li>
+<li class="nav-item"><a class="nav-link" href="/menu/">MENU</a><li>
+<li class="nav-item"><a class="nav-link" href="/services/">SERVICES</a><li>
+<li class="nav-item"><a class="nav-link" href="/blog/">BLOG</a><li>
+<li class="nav-item"><a class="nav-link" href="/portfolio/">PORTFOLIO</a><li>
+<li class="nav-item"><a class="nav-link" href="/contacts/">CONTACTS</a><li>
+<li class="nav-item"><a class="nav-link" href="/booking/">BOOKING</a><li>
+</ul>
+</nav>
+</div>
+
+<div class="row p-3 bg-dark text-light" id="header">
+<div class="col-md-4 p-3">
+<h5>info@royalcatering.com</h5>
+</div>
+
+<div class="col-md-4 p-3">
+<h3>Royal Event Catering</h3>
+</div>
+
+<div class="col-md-4 p-3">
+<h5>213-456-7890</h5>
+</div>
+</div>
+
+{% block content %}
+{% endblock %}
+
+
+
+<div class="row text-center p-5 bg-dark text-light">
+
+<div class="col-md-4 p-3">
+<h6 style="font-family:verdana;">213-456-7890</h6>
+<h5>info@royalcatering.com</h5>
+</div>
+
+<div class="col-md-4 p-3">
+<h2 style="font-family:verdana;">Royal Event Catering</h2>
+</div>
+
+<div class="col-md-4 p-3">
+<h6>Ajit Road, Bathinda</h6>
+<h5 style="font-family:verdana;">Punjab, India</h5>
+</div>
+</div>
+
+<div class="row text-center p-4" id="icons">
+<div class="col-md-12">
+<i class="fa fa-twitter"></i>
+<i class="fa fa-facebook"></i>
+<i class="fa fa-instagram"></i>
+</div>
+</div>
+
+<div class="row text-center">
+<div class="col-md-12">
+<h6> &copy; Copyright 2021 . Royal Event Catering. All Rights Reserved</h6>
+</div>
+</div>
+
+</div>
+
+</body>
+</html>

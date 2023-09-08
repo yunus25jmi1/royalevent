@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+<div class="p-3">
+<input type="text" placeholder="password" />
+<button id="b1">Click</button>
+<button id="b2">Clear Formatting</button>
+<h3 id="result"></h3>
+<div id="d1" style="height:100px; width:100px;
+background:blue;">
+</div>
+</div>
+<script src="{% static 'jquery.js' %}"></script>
+<script>
+$(document).ready(function(){
+
+$("#b1").click(function(){
+var x=$("#t1").val();
+//$("#result".html(x);
+//$("#result").append('welcome'+x+'<br>').css("color","green");
+//$("#result").append('welcome'+x+'<br>').css("color":"green","font-size":"40px","font-style":"italic"});
+$("#result").append('welcome'+x+'<br>').addclass("mycls");
+$("t1").val("");
+
+//alert('clicked');
+/*$("#d1").animate({
+'marginLeft':'300px',
+'height':'200px'
+},1000).animate({
+'marginTop':'100px',
+'opacity':'0.5'
+},1000);*/
+
+});
+
+
+
+$("b2").click(function){
+$("#result").removeclass("my cls");
+});
+
+});
+</script>
+
+{% endblock %}

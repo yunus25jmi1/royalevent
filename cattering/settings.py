@@ -25,7 +25,7 @@ SECRET_KEY = 'i8^236v%s)v9a*pozo7g+5c32n)+vkm0k(nx%4mcw&j8m9(cz6'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [royalevent.onrender.com]
+ALLOWED_HOSTS = []
 
 
 # Application definition
